@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Inicio extends CI_Controller {
+class Auto extends CI_Controller {
 
-	public function index(){
+    public function index(){
         if(!$this->session->userdata('email') || !$this->session->userdata('agente')){
             if($this->input->get('email')){
                 $this->session->set_userdata(array(
@@ -11,7 +11,7 @@ class Inicio extends CI_Controller {
                     'tel'       => $this->input->get('agentetel', true),
                     'mail'      => $this->input->get('agentemail', true)
                 ));
-                redirect('inicio');
+                redirect('auto');
             }else{
                 $this->session->set_userdata(array(
                     'email'     => 'guest@axa.mx'
@@ -23,7 +23,7 @@ class Inicio extends CI_Controller {
         $data[ 'numero' ]   = '10';
 
         $this->load->view( 'header_v', $data );
-		$this->load->view( '2014/octubre/inicio_v', $data);
-        $this->load->view( 'footer_v', $data);
-	}
+        $this->load->view( '2014/octubre/auto_v', $data );
+        $this->load->view( 'footer_v' );
+    }
 }

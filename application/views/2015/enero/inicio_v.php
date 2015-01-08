@@ -4,7 +4,7 @@
     </div>
     <div class="bit-5 header-details">
         <h2>BOLET&Iacute;N AXA</h2>
-        <h3><?=$mes;?> <?=$anio;?> <strong>N. 10</strong></h3>
+        <h3><?=$mes;?> <?=$anio;?> <strong>N. <?=$numero;?></strong></h3>
         <p>Consulta los n&uacute;meros anteriores <?=anchor('http://www.boletinaxa.com.mx/anterior/historico.html', img('images/assets/btn_landing.png'));?></p>
     </div>
 </header>

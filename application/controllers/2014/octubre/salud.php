@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Auto extends CI_Controller {
+class Salud extends CI_Controller {
 
     public function index(){
         if(!$this->session->userdata('email') || !$this->session->userdata('agente')){
@@ -11,18 +11,19 @@ class Auto extends CI_Controller {
                     'tel'       => $this->input->get('agentetel', true),
                     'mail'      => $this->input->get('agentemail', true)
                 ));
-                redirect('auto');
+                redirect('salud');
             }else{
                 $this->session->set_userdata(array(
                     'email'     => 'guest@axa.mx'
                 ));
             }
         }
-        $data[ 'mes' ]  = 'Septiembre';
-        $data[ 'anio' ] = '2014';
+        $data[ 'mes' ]      = 'Octubre';
+        $data[ 'anio' ]     = '2014';
+        $data[ 'numero' ]   = '10';
 
-        $this->load->view('header_v');
-        $this->load->view('auto_v_octubre_2014');
-        $this->load->view('footer_v');
+        $this->load->view( 'header_v', $data );
+        $this->load->view( '2015/enero/salud_v', $data );
+        $this->load->view( 'footer_v' );
     }
 }

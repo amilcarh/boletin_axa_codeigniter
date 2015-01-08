@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class InicioEnero2015 extends CI_Controller {
+class Inicio extends CI_Controller {
 
     public function index(){
         if(!$this->session->userdata('email') || !$this->session->userdata('agente')){
@@ -18,11 +18,12 @@ class InicioEnero2015 extends CI_Controller {
                 ));
             }
         }
-        $data[ 'mes' ]  = 'Septiembre';
-        $data[ 'anio' ] = '2014';
+        $data[ 'mes' ]      = 'Enero';
+        $data[ 'anio' ]     = '2015';
+        $data[ 'numero' ]   = '11';
 
-        $this->load->view('header_v');
-        $this->load->view('2015/enero/inicio_v');
-        $this->load->view('footer_v');
+        $this->load->view( 'header_v', $data );
+        $this->load->view( '2015/enero/inicio_v', $data );
+        $this->load->view( 'footer_v' );
     }
 }
