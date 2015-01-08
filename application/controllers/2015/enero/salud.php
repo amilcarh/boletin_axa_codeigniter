@@ -18,12 +18,15 @@ class Salud extends CI_Controller {
                 ));
             }
         }
-        $data[ 'mes' ]      = 'Enero';
-        $data[ 'anio' ]     = '2015';
-        $data[ 'numero' ]   = '11';
+        $this->load->library('parser');
+        $data   = array(
+                        'mes'       => 'Enero',
+                        'anio'      => '2015',
+                        'numero'    => '11'
+                        );
 
-        $this->load->view('header_v');
-        $this->load->view('2015/enero/auto_v');
+        $this->parser->parse( 'header_v', $data );
+        $this->parser->parse( '2015/enero/auto_v', $data );
         $this->load->view('footer_v');
     }
 }

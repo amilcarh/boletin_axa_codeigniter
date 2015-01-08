@@ -18,12 +18,15 @@ class Futuro extends CI_Controller {
                 ));
             }
         }
-        $data[ 'mes' ]      = 'Octubre';
-        $data[ 'anio' ]     = '2014';
-        $data[ 'numero' ]   = '10';
+        $this->load->library('parser');
+        $data   = array(
+                        'mes'       => 'Octubre',
+                        'anio'      => '2014',
+                        'numero'    => '10'
+                        );
 
-        $this->load->view( 'header_v', $data );
-        $this->load->view( '2014/octubre/futuro_v', $data );
+        $this->parser->parse( 'header_v', $data );
+        $this->parser->parse( '2014/octubre/futuro_v', $data );
         $this->load->view( 'footer_v' );
     }
 }
