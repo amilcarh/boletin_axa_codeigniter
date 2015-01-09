@@ -2,10 +2,11 @@
 
 class Octubre extends CI_Controller {
     public $_data   = array(
-                        'mes'       => 'Octubre',
-                        'anio'      => '2014',
-                        'numero'    => '10'
-                        );
+                            'mes'           => 'Octubre',
+                            'anio'          => '2014',
+                            'numero'        => '10',
+                            'stylesheet'    => 'octubre-2014'
+                            );
 
 	public function index ()
     {
@@ -13,7 +14,7 @@ class Octubre extends CI_Controller {
 
         $this->parser->parse( 'header_v', $this->_data );
 		$this->parser->parse( '2014/octubre/inicio_v', $this->_data );
-        $this->load->view( 'footer_v', $data);
+        $this->load->view( 'footer_v' );
 	}
 
     public function salud ()
