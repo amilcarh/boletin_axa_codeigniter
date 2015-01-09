@@ -20,9 +20,10 @@ class Inicio extends CI_Controller {
         }
         $this->load->library('parser');
         $data   = array(
-                        'mes'       => 'Enero',
-                        'anio'      => '2015',
-                        'numero'    => '11'
+                        'mes'           => 'Enero',
+                        'anio'          => '2015',
+                        'numero'        => '11',
+                        'stylesheet'    => 'enero-2015'
                         );
 
         $this->parser->parse( 'header_v', $data );

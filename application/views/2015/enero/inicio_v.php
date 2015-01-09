@@ -8,7 +8,6 @@
         <p>Consulta los n&uacute;meros anteriores <?=anchor('http://www.boletinaxa.com.mx/anterior/historico.html', img('images/assets/btn_landing.png'));?></p>
     </div>
 </header>
-
 <nav class="frame">
     <ul>
         <li><?=anchor('/', 'INICIO');?></li>
@@ -23,16 +22,27 @@
 <div class="container">
     <?=($this->session->flashdata('msg') ? '<p style="color:red;font-size:.8em;">'.$this->session->flashdata('msg').'</p>' : '');?>
     <div class="frame">
-        <div class="bit-60 gray-border rounded shadow" style="margin:0 0 0 0;" id="two-row-span">
-            <h1>Haz de tu retiro una experiencia satisfactoria.</h1>
-            <br />
-            <p class="bit-60"><br />
-                &iquest;Est&aacute;s preparado para el momento de tu retiro?
-                Sigue estos consejos y asegura un buen futuro para ti y tu familia.
-            </p>
+        <div class="bit-60 rounded shadow" id="two-row-span">
+            <h1>Manejar bien:</h1>
+            <h2>Un propósito de año nuevo</h2>
+            <p>Una nueva forma de conducir nuestros cochesm es un<br />gran propósito para iniciar el año.</p>
             <p class="bit-40 centered">
+                <ul>
+                    <li>
+                        <?=img('images/assets/2015/inicio/familia.png');?>
+                    </li>
+                    <li>
+                        <?=img('images/assets/2015/inicio/ciclista.png');?>
+                    </li>
+                    <li>
+                        <?=img('images/assets/2015/inicio/edificio.png');?>
+                    </li>
+                    <li>
+                        <?=img('images/assets/2015/inicio/coche.png');?>
+                    </li>
+                </ul>
                 <?=img('images/assets/iconos_banner.png');?>
-                <?=anchor('futuro', img('images/assets/btn_leerMas.png'));?>
+                <?=anchor('futuro', img('images/assets/2015/inicio/leer_mas_1.png'));?>
             </p>
         </div>
 
@@ -58,12 +68,12 @@
         <div class="bit-3 navy-border">
             <div class="square dark-text shadow gray-border">
                 <div class="bit-1 dark-text inner-square">
-                    <h3>&iquest;Sabes c&oacute;mo evitar un incendio en tu hogar?</h3>
+                    <h3>Conoce los accidentes más frecuentes en el hogar y toma tus precauciones.</h3>
                     <p class="bit-20">
-                        <?=img('images/assets/icono_casa.png');?>
+                        <?=img('images/assets/2015/inicio/casa_art1.png');?>
                     </p>
                     <p class="bit-80">
-                        Identifica los riesgos que corres en casa y toma medidas de prevenci&oacute;n para evitar este tipo de desastres.
+                        ¿Sabías que el 90% de los accidentes que ocurren en el hogar se pueden evitar?
                         <?=anchor('hogar', img('images/assets/btn_leerMas.png'));?>
                     </p>
                 </div>
@@ -73,12 +83,13 @@
         <div class="bit-3 navy-border">
             <div class="square dark-text shadow gray-border">
                 <div class="bit-1 dark-text inner-square">
-                    <h3>Tu sonrisa es reflejo de tu salud.</h3>
+                    <h3>Lumbalgia,</h3>
+                    <h3 class="small-title">un mal que afecta a los mexicanos</h3>
                     <p class="bit-20">
-                        <?=img('images/assets/icono_muela.png');?>
+                        <?=img('images/assets/2015/inicio/mono_art2.png');?>
                     </p>
                     <p class="bit-80">
-                        Una buena sonrisa nos puede abrir muchas puertas. Conoce las formas en las que puedes proteger tu dentadura.
+                        El 80% de los mexicanos ha padecido de dolores agudos en la espalda.
                         <?=anchor('salud', img('images/assets/btn_leerMas.png'));?>
                     </p>
                 </div>
@@ -88,13 +99,12 @@
         <div class="bit-3">
             <div class="square dark-text shadow gray-border">
                 <div class="bit-1 inner-square">
-                    <h3>&iexcl;Qu&eacute; nada te impida llegar a tu destino!</h3>
+                    <h3>¿Cómo recuperarte de los gastos de diciembre?</h3>
                     <p class="bit-20">
-                        <?=img('images/assets/icono_auto.png');?>
+                        <?=img('images/assets/2015/inicio/cerdo_art3.png');?>
                     </p>
                     <p class="bit-80">
-                        Todos estamos expuestos a que el autom&oacute;vil nos deje parados en la carretera. Aqu&iacute; te decimos qu&eacute;
-                        hacer en estos casos.
+                        Que la cuesta de enero, no cueste tanto.
                         <?=anchor('auto', img('images/assets/btn_leerMas.png'));?>
                     </p>
                 </div>
@@ -106,9 +116,10 @@
         <div class="bit-3">
             <div class="small-square">
                 <div class="bit-1 lightblue inner-square" style="background-color:#e8e7e5;">
-                    <h3>Soluciones de protecci&oacute;n al alcance de tu mano</h3>
-                    <p class="bit-40"><?=img('images/assets/pantallas_cel.png');?></p>
-                    <p class="bit-60">3 apps para hacer tu vida m&aacute;s f&aacute;cil <?=br(3).anchor('apps', img('images/assets/btn_conocelas.png'));?></p>
+                    <h3>¡Ya puedes pagar tu póliza desde dispositivos móviles!</h3>
+                    <h4>Fácil y en todo momento</h4>
+                    <p class="bit-40"><?=img('images/assets/2015/inicio/dispositivos.png');?></p>
+                    <p class="bit-60"><?=anchor('apps', img('images/assets/btn_conocelas.png'));?></p>
                 </div>
             </div>
         </div>
@@ -116,12 +127,11 @@
         <div class="bit-3">
             <div class="small-square">
                 <div class="bit-1 lightblue inner-square" style="background-color:#dcd9d6;">
-                    <h3>&iquest;Malestar? &iquest;Fiebre? &iquest;Emergencia?</h3>
+                    <h3>¿Insatisfecho con nuestro servicio?</h3>
                     <p class="bit-40" style="font-size:1.6em;text-align:center;">
-                        <?=img('images/assets/icono_tel.png');?><br />
-                        <span style="font-size:.9em;">Tu m&eacute;dico 24 horas</span>
+                        <?=img('images/assets/2015/inicio/call_center.png');?><br />
                     </p>
-                    <p class="bit-60">Te protegemos desde el primer s&iacute;ntoma <?=br(3).anchor('http://axa.mx/Personas/perfiladores/Salud911/Paginas/default.aspx', img('images/assets/btn_descubremas.png'), array('anchor'=>'_blank'));?></p>
+                    <p class="bit-60"><?=anchor('http://axa.mx/Personas/perfiladores/Salud911/Paginas/default.aspx', img('images/assets/btn_descubremas.png'), array('anchor'=>'_blank'));?></p>
                 </div>
             </div>
         </div>
@@ -129,7 +139,12 @@
         <div class="bit-3">
             <div class="small-square" style="background-color:#e8e7e5;">
                 <div class="bit-1 inner-square">
-                    <?=anchor('http://promociones-axa.com.mx/?utm_medium=email+AXA/Touch&utm_campaign=AXA/Touch+Boletin+septiembre+2014+Escoge+y+estrena&utm_source=Boletin+septiembre+2014', img('images/assets/landing-escoge.jpg'), array('target'=>'_blank'));?>
+                    <h3>Blog Mirada X.</h3>
+                    <p class="bit-40" style="font-size:1.6em;text-align:center;">
+                        Tecnología, prevención y la industria de seguros en una sola plataforma.
+                        <?=img('images/assets/2015/inicio/mirada_x.png');?><br />
+                    </p>
+                    <p class="bit-60"><?=anchor('http://promociones-axa.com.mx/?utm_medium=email+AXA/Touch&utm_campaign=AXA/Touch+Boletin+septiembre+2014+Escoge+y+estrena&utm_source=Boletin+septiembre+2014', img('images/assets/btn_descubremas.png'), array('target'=>'_blank'));?></p>
                 </div>
             </div>
         </div>

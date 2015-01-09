@@ -3,15 +3,18 @@
 class Enero extends CI_Controller
 {
     public $_data   = array(
-                           'mes'       => 'Enero',
-                           'anio'      => '2015',
-                           'numero'    => '11'
-                        );
+                            'mes'       => 'Enero',
+                            'anio'      => '2015',
+                            'numero'    => '11',
+                            'stylesheet'=> 'enero-2015'
+                            );
 
     public function index ()
     {
-        $this->parser->parse( 'header_v', $data );
-        $this->parser->parse( '2015/enero/inicio_v', $data );
+        $this->_initPage();
+
+        $this->parser->parse( 'header_v', $this->_data );
+        $this->parser->parse( '2015/enero/inicio_v', $this->_data );
         $this->load->view( 'footer_v' );
     }
 
