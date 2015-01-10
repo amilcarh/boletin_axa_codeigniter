@@ -2425,22 +2425,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/source\/sass\/custom-styles\/2014\/octubre\/home.sass": {
-		"createSourceMap": 1,
-		"debugStyle": 0,
-		"decimalPrecision": 2,
-		"fileType": 2,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/sass\/custom-styles\/2014\/octubre\/home.sass",
-		"outputAbbreviatedPath": "\/css\/home.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": false
-		},
 	"\/source\/sass\/custom-styles\/2015\/enero\/home.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
