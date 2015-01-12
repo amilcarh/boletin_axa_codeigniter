@@ -28,16 +28,16 @@
             <p class="bit-80 white-text">Una nueva forma de conducir nuestros coches, es un gran propósito para iniciar el año.</p>
             <p class="bit-60 centered">
                 <ul class="clearfix bit-70">
-                    <li class="clearfix">
+                    <li class="clearfix bit-20">
                         <?=img('images/assets/2015/inicio/familia.png');?>
                     </li>
-                    <li class="clearfix">
+                    <li class="clearfix bit-20">
                         <?=img('images/assets/2015/inicio/ciclista.png');?>
                     </li>
-                    <li class="clearfix">
+                    <li class="clearfix bit-20">
                         <?=img('images/assets/2015/inicio/edificio.png');?>
                     </li>
-                    <li class="clearfix">
+                    <li class="clearfix bit-20">
                         <?=img('images/assets/2015/inicio/coche.png');?>
                     </li>
                 </ul>
@@ -80,7 +80,7 @@
             <div class="square dark-text shadow gray-border">
                 <div class="bit-1 dark-text inner-square second">
                     <h3 class="bit-40 centered">Lumbalgia,</h3>
-                    <h3 class="small-title bit-60">un mal que afecta a los mexicanos</h3>
+                    <h3 class="small-title bit-80">un mal que afecta a los mexicanos</h3>
                     <p class="bit-40">
                         <?=img('images/assets/2015/inicio/mono_art2.png');?>
                     </p>
@@ -115,10 +115,10 @@
             <div class="small-square">
                 <div class="bit-1 lightblue inner-square second" style="background-color:#dcd9d6;">
                     <?=img( array( 'class' => "bit-40", 'src' => 'images/assets/2015/inicio/call_center.png' ) );?>
-                    <h3 class="bit-60">¿Insatisfecho con nuestro servicio?</h3>
+                    <h3 class="bit-50">¿Insatisfecho con nuestro servicio?</h3>
                     <p class="bit-60">
                         <?=anchor( 'http://axa.mx/Personas/perfiladores/Salud911/Paginas/default.aspx',
-                        img('images/assets/btn_descubremas.png'),
+                        img('images/assets/btn_hazclicaqui.png'),
                         array(
                             'anchor'=>'_blank',
                             'class' =>'clearfix'

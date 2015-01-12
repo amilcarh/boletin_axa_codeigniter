@@ -1442,6 +1442,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/assets\/btn_hazclicaqui.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3416,
+		"inputAbbreviatedPath": "\/images\/assets\/btn_hazclicaqui.png",
+		"outputAbbreviatedPath": "\/images\/assets\/btn_hazclicaqui.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/assets\/btn_landing.png": {
 		"fileType": 32768,
 		"ignore": 0,

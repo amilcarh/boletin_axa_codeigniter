@@ -21,27 +21,32 @@ header
             ul
                 float: left
                 margin: 0
-                padding: 0
+                padding: 0px
+                display: inline-block
+                height: 46px
                 li
                     float: left
-                    height: 6.15234375vw
-                    list-style: none inside
-                    margin: 1.5625vw 0 0
+                    list-style: inside none none
+                    margin: 0 5px 0px
                     position: relative
-                    width: 6.15234375vw
+                    padding: 0px
+                    display: inline-block
+                    width: 6.15vw
+                    height: 46px
+                    box-sizing: border-box
                     img
-                        bottom: 0
+                        bottom: 0px
                         display: block
-                        left: 0
+                        left: 0px
                         margin: auto
                         position: absolute
-                        right: 0
-                        top: 0
+                        right: 0px
+                        top: 0px
             img
             a
                 float: right
                 display: inline-block
-                margin: 35px 0 0
+                margin: 5px 0 0
                 img
         #two-rows
             div
@@ -63,8 +68,10 @@ header
             .square
                 .inner-square
                     h3
-                        font-size: em( 18, 17 )
+                        font-size: em( 18, 16 )
                 .first
+                    h3
+                        font-size: em( 16, 16 )
                     a
                         float: right
                     p
@@ -79,13 +86,15 @@ header
                         padding: 0
                         &:first-child
                             font-size: em( 22, 16 )
-                        &:last-child
-                            font-size: em( 14, 16 )
+                        &:nth-child( 2n )
+                            font-size: em( 15, 16 ) !important
                     p
                         &:nth-child( 5n )
                             padding: 0
                         &:nth-child( 3n )
                             padding: 0
+                        a
+                            display: block
                 .third
                     h3
                         font-size: em( 22, 16 )
@@ -117,10 +126,10 @@ header
                     h3
                         float: left
                         font-size: em( 20, 12.8 )
-                        margin: 20px auto
+                        margin: 13px auto 0
                         padding-left: 0
                         padding-right: 0
-                        width: 60% !important
+                        width: 50% !important
                     img
                         float: left
                     p
@@ -130,8 +139,12 @@ header
                             img
                                 float: right
                 .third
+                    h3
+                        font-size: em( 25, 16 )
                     p.bit-60
-                        font-size: em( 14, 16 )
+                        font-size: em( 11, 16 )
+                        margin: 0
+                        padding: 0
                         text-align:center
                     img
                         float: left
