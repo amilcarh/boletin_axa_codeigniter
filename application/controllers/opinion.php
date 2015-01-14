@@ -47,13 +47,13 @@ class Opinion extends CI_Controller {
             array_push($poll, $quiz);
         }
 
-        $data['poll'] = $poll;
+        $data[ 'poll' ] = $poll;
         $data[ 'mes' ]  = 'Septiembre';
         $data[ 'anio' ] = '2014';
 
-        $this->load->view('header_v');
-        $this->load->view('opinion_v', $data);
-        $this->load->view('footer_v');
+        $this->parser->parse( 'header_v' );
+        $this->parser->parse( 'opinion_v', $data );
+        $this->load->view( 'footer_v' );
     }
 
     function submit(){
